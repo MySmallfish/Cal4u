@@ -27,7 +27,7 @@
             
             navigator.camera.getPicture(onSuccess, onFail, {
                 quality: 50,
-                destinationType: Camera.DestinationType.DATA_URL
+                destinationType: cordova.Camera.DestinationType.DATA_URL
             });
 
             function onSuccess(imageData) {
@@ -37,7 +37,7 @@
 
             function onFail(message) {
                 $scope.message = ('Failed because: ' + message);
-                $scope.$apply():
+                $scope.$apply();
             }
 
             sessionStorage.clear();
