@@ -3,7 +3,7 @@
     function LoginCtrl($scope, loginManager, scanner) {
 
         function onBarcodeScanned(barCode) {
-            $scope.barCode = barCode;
+            $scope.Username = barCode;
         }
 
         $scope.$on("Cal.BarcodeScanned", function(e, barCode) {
