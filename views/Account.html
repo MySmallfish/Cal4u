@@ -1,0 +1,33 @@
+﻿<div class="accountBox">
+<div class="account" ng-swipe-left="prevAccount()" ng-swipe-right="nextAccount()">
+    <div class="prevAccount" ng-click="prevAccount()"></div>
+    <div class="accountName">
+        מס' ח-ן {{ selectedAccount.AccountNumber }} {{ selectedAccount.BankName }} {{ selectedAccount.BankBranchNumber }}
+    </div>
+    <div class="nextAccount" ng-click="nextAccount()"></div>
+</div>
+<div ng-show="selectedAccount">
+<h2>
+משתמש: {{ user.FirstName }}
+<br />
+כרטיסים: <span>{{selectedAccount.Cards.length}}</span>
+</h2>   
+    <ul class="swippable">
+    <li ng-repeat="card in selectedAccount.Cards" ng-show="$index == cardIndex" ng-swipe-left="prevCard()" ng-swipe-right="nextCard()">
+        <div class="card">
+            <div class="hd">
+                <div class="main">{{ card.OwnerFirstName }} {{ card.OwnerLastName }} {{ card.LastFourDigits }}</div>
+                <div class="sub">{{ card.CardType }}</div>
+            </div>
+            <div class="bd"></div>
+        </div>
+    </li>
+</ul>
+<ul class="swippable horiz">
+    <li ng-repeat="card in selectedAccount.Cards">
+        <span class="dot" ng-class="{selected: $index == cardIndex }" ng-click="$parent.cardIndex = $index"></span>
+    </li>
+</ul>
+
+</div><div class="loginWaitingMask" ng-show="isWaiting"></div>
+</div>

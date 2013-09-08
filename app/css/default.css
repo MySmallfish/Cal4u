@@ -1,0 +1,385 @@
+﻿body {
+    direction:rtl;
+    font-family:Arial;
+    background-color:#03335C;
+                user-select:none;
+            -webkit-user-select:none;
+            color:White;
+            
+}
+
+h1
+{
+    color:Black;
+}
+
+.container
+{
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 415px;
+    width: 320px;
+    
+    padding:0;
+    margin:0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+header
+{
+    background-repeat: no-repeat;
+    background-position: center center;    
+    height: 44px;
+    
+    width:auto;
+}
+
+
+
+a
+{
+    cursor:pointer;
+    }
+
+
+
+h1
+{
+    font-weight: bold;
+    font-size: 23pt;    
+    line-height: 41px;
+}
+
+
+.menu
+{
+    margin:0;
+    padding:0;
+    margin-top:34px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 90%;
+    list-style-type:none;
+    
+}
+
+.menu li
+{
+    margin-bottom: 32px;
+    padding: 4px;
+}
+
+
+.menu li a,
+.menu li a:hover,
+.menu li a:active,
+.menu li a:visited,
+.largeButton
+{
+    text-decoration:none;
+    background-color: White;
+    border:solid 1px #bbb;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    font-weight:bold;
+    padding-left: 24px;
+    padding-right: 24px;
+    display:block;
+    width:auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+    color:#135b95;
+    margin-left:auto;
+    margin-right:auto;
+
+    font-size: 18pt;
+    height: 41px;
+    line-height: 37px;
+
+}
+
+.largeButton
+{
+    font-size: 15pt;
+    font-weight:bold;
+    height: 26px;
+    line-height: 24px;    
+}
+
+.menu li a,
+.menu li a:hover,
+.menu li a:active,
+.menu li a:visited
+{
+    padding-right: 64px;
+}
+.back
+{
+    line-height: 40px;
+    color:White;
+}
+
+.loginBoxWrapper
+{
+    position:relative;
+    margin-top: 27px;
+    width: 254px;
+    height: 240px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.loginBox
+{
+    background-position:center center;
+    background-repeat: no-repeat;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    padding-top: 12px;
+    
+}
+
+legend, .linkWrapper a
+{
+    text-align:center;
+    font-size:12pt;
+    line-height: 12pt;
+    color:White;
+      border:none;
+      
+        
+}
+
+.linkWrapper a,
+.linkWrapper a:hover,
+.linkWrapper a:visited,
+.linkWrapper a:active
+{
+    text-decoration: underline;
+    
+}
+
+.linkWrapper
+{
+    text-align:center; 
+    margin-bottom: 12px;
+}
+
+.linkWrapper:first-child
+{
+    margin-top: 24px;
+}
+
+
+fieldset
+{
+    width:auto;
+}
+
+.inputWrapper 
+{
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    border: solid 1px #333;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    margin-top: 14px;
+    background-color:#285E82;
+    
+}
+
+.inputWrapper input[type=text],
+.inputWrapper input[type=password]
+{
+    background:transparent;
+    border:none;
+    color: White;
+    width: 100%;
+    padding:0;
+    margin:0;
+    font-size: 16pt;
+    height: 18pt;
+}
+
+.account
+{
+    margin-right:auto;
+    margin-left:auto;
+    height: 24px;
+    padding-left:7px;
+    padding-right:7px;
+    color:White;
+    position:relative;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.accountName
+{
+    text-align:center;
+    font-size:11pt;
+    padding-left:7px;
+    padding-right:7px;
+    height: 21px;    
+    line-height: 19px;
+    font-weight:bold;
+    background-color: #0D1B2A;
+}
+    
+.prevAccount, .nextAccount
+{
+    width: 14px;
+    height: 22px;
+    position:absolute;
+    top: 0px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position:left center;
+           
+}
+
+.nextAccount
+{
+    right:auto;
+    left:0;
+    background-position:right center;
+}
+
+.card 
+{
+    background-color: #2970A0;
+    
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    height: 110px;
+    padding:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+            display:block;
+            user-select:none;
+            -webkit-user-select:none;
+            cursor:pointer;    
+}
+
+.card .hd
+{
+    font-size: 12pt;
+    line-height:1.2;
+    font-weight:bold;
+    color:White;
+}
+.card .hd .sub
+{
+    font-size:8pt;
+}
+
+.card .hd
+{
+    border-bottom: solid 1px #EEE;
+}
+
+h2
+{
+    text-align:center;
+    color:#eee;
+}
+
+.loginWaitingMask
+{
+    position:absolute;
+    z-index: 1000;
+    left: 100px;
+    top: 100px;
+    right: 100px;
+    bottom:100px;
+    border:solid 1px #333;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    opacity: 0.7;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/waiting.gif);
+}
+
+.accountBox
+{
+    position:relative;
+}
+
+ul.swippable,
+.accountBox
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+                user-select:none;
+            -webkit-user-select:none;
+}
+
+ul.horiz 
+{
+    text-align: center;
+}
+ul.horiz li
+{
+    display: inline-block;
+}
+
+.dot
+{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    width: 8px;
+    height: 8px;
+    display:block;
+    background-color:#AAA;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.dot.selected
+{
+    background-color: White;
+}
+
+@media()
+{
+    .container 
+    {
+            height: 728px;
+    width: 640px;
+    }
+    
+    .menu li a,
+.menu li a:hover,
+.menu li a:active,
+.menu li a:visited,
+.largeButton
+{
+        font-size: 40pt;
+    height: 82px;
+    line-height: 78px;
+}
+.menu li a,
+.menu li a:hover,
+.menu li a:active,
+.menu li a:visited
+{
+    padding-right: 128px;
+}
+
+
+h1
+{
+    font-weight: bold;
+    font-size: 46pt;    
+    line-height: 82px;
+}
+
+
+}

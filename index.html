@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link type="text/css" rel="Stylesheet" href="lib/bootstrap/bootstrap-rtl.min.css" />
+    <link type="text/css" rel="Stylesheet" href="lib/carousel/angular-carousel.min.css" />
+    <link type="text/css" rel="Stylesheet" href="app/css/default.css" />
+    <link type="text/css" rel="Stylesheet" href="app/css/icons1x.css" />
+    <script type="text/javascript" src="phonegap.js"></script>
+</head>
+<body ng-app="Cal4u">
+    <div class="container">
+        <header>
+        <div class="row-fluid">
+            <div class="span2">
+            &nbsp;
+            </div>
+            <div class="span8">
+                <h1>כניסה למערכת</h1>
+                
+            </div>
+            <div class="span2">
+            <div class="back">
+                <a href="#/" class="btn btn-primary" >חזור</a>
+                </div>
+            </div>
+        </div>
+    </header>
+            <ng-view />
+    </div>
+
+    <script type="text/javascript" src="lib/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="lib/jQuery/jquery.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-1.0.7.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-touch.min.js"></script>
+
+
+    
+    <script type="text/javascript" src="app/js/Cal.js"></script>
+    <script type="text/javascript" src="app/js/AccountCtrl.js"></script>
+    <script type="text/javascript" src="app/js/HomeCtrl.js"></script>
+    <script type="text/javascript" src="app/js/LoginCtrl.js"></script>
+    <script type="text/javascript" src="app/js/loginManager.js"></script>
+    <script type="text/javascript" src="app/js/accountManager.js"></script>
+    <script type="text/javascript" src="app/js/sessionService.js"></script>
+    <script type="text/javascript" src="app/js/app.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("deviceready", function () {
+            document.addEventListener("backbutton", function () {
+                location.href = "#/";
+            }, false);
+        }, false);
+    </script>
+</body>
+</html>

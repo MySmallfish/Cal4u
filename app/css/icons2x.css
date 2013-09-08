@@ -1,0 +1,45 @@
+﻿header
+{
+    background-image: url("../img/General/x2/TopBar/top_bar_background@2x.png");
+}
+.container
+{    
+    background-image: url(../img/Login/x2/background_with_logo@2x.png);
+}
+
+.Account
+{
+    background-image: url(../img/custom/myaccount.png);
+}
+
+.CustomerService
+{
+    background-image: url(../img/custom/customerservice.png);
+}
+
+
+.CreditServices
+{
+    background-image: url(../img/custom/creditservices.png);
+}
+
+.GetCalCard
+{
+    background-image: url(../img/custom/getmycal.png);
+}
+
+
+.loginBox
+{
+    background-image: url(../img/Login/x2/box_bg@2x.png);
+}
+
+.nextAccount
+{
+       background-image: url(../img/General/x2/AccountNumber/account_number_left_btn@2x.png);
+}
+
+.prevAccount
+{
+       background-image: url(../img/General/x2/AccountNumber/account_number_right_btn@2x.png);
+}

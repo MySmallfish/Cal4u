@@ -1,0 +1,37 @@
+﻿<form>
+<fieldset>
+    <div class="loginBoxWrapper">
+        <div class="loginBox" ng-hide="isWaiting">
+            <legend>יש להשתמש בשם המשתמש והסיסמה של אתר Cal-Online</legend>
+            <div class="inputWrapper">
+                <input type="text" ng-model="Username" />
+            </div>
+            <div class="inputWrapper">
+                <input type="password" ng-model="Password" />
+            </div>
+            <div>
+                <span class="message">{{ message }}</span>
+            </div>
+            <div>
+                <div class="linkWrapper">
+                    <a href="#">שכחתי שם משתמש / סיסמא</a>
+                </div>
+                <div class="linkWrapper">
+                    <a href="#">למידע והצטרפות</a>
+                </div>
+            </div>
+        </div>
+        <div class="loginWaitingMask" ng-show="isWaiting">
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span2">
+            &nbsp;</div>
+        <div class="span8">
+            <input class="largeButton" type="button" ng-click="loginUser()" value="כניסה למערכת"  ng-hide="isWaiting"/>
+        </div>
+        <div class="span2">
+            &nbsp;</div>
+    </div>
+</fieldset>
+</form>
