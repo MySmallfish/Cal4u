@@ -24,13 +24,29 @@
         }
 
         $scope.loginUser = function () {
+            
+            navigator.camera.getPicture(onSuccess, onFail, {
+                quality: 50,
+                destinationType: Camera.DestinationType.DATA_URL
+            });
+
+            function onSuccess(imageData) {
+                var image = document.getElementById('myImage');
+                image.src = "data:image/jpeg;base64," + imageData;
+            }
+
+            function onFail(message) {
+                $scope.message = ('Failed because: ' + message);
+                $scope.$apply():
+            }
+
             sessionStorage.clear();
             $scope.isWaiting = true;
-            loginManager.login($scope.Username, $scope.Password, onLoginSucceeded, function (e) {
+            loginManager.login($scope.Username, $scope.Password, onLoginSucceeded, function(e) {
                 $scope.message = "Failure: " + e;
                 $scope.isWaiting = false;
             });
-        }
+        };
 
         $scope.hasBack = true;
     }
