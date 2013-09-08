@@ -25,10 +25,13 @@
 
         $scope.loginUser = function () {
             
-            navigator.camera.getPicture(onSuccess, onFail, {
-                quality: 50,
-                destinationType: cordova.Camera.DestinationType.DATA_URL
-            });
+            try {
+                navigator.camera.getPicture(onSuccess, onFail, {
+                    quality: 50
+                });
+            } catch (e) {
+                $scope.mssage = 'Error:' + e;
+            }
 
             function onSuccess(imageData) {
                 var image = document.getElementById('myImage');
