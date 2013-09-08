@@ -52,6 +52,20 @@
             document.addEventListener("backbutton", function () {
                 location.href = "#/";
             }, false);
+            
+            document.addEventListener("pause", onPause, false);
+            document.addEventListener("resume", onResume, false);
+            function onPause() {
+                setTimeout(function() {
+                    navigator.alert("BYE!");
+                }, 0);
+            }
+
+            function onResume() {
+                setTimeout(function () {
+                    navigator.alert("GOOd Morning!");
+                }, 0);
+            }
         }, false);
     </script>
 </body>
