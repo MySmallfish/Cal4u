@@ -2,13 +2,16 @@
 
     var app = angular.module("Cal4u", ["ngTouch"]);
 
-    app.controller("AccountCtrl", Cal.AccountCtrl);
-    app.controller("HomeCtrl", Cal.HomeCtrl);
-    app.controller("LoginCtrl", Cal.LoginCtrl);
     app.service("sessionService", Cal.SessionService);
     app.service("loginManager", Cal.LoginManager);
     app.service("accountManager", Cal.AccountManager);
+    app.service("scanner", Cal.Scanner);
 
+    app.controller("AccountCtrl", Cal.AccountCtrl);
+    app.controller("HomeCtrl", Cal.HomeCtrl);
+    app.controller("LoginCtrl", Cal.LoginCtrl);
+    
+    
     app.config(["$routeProvider", function ($routeProvider) {
         $routeProvider
             .when("/", { templateUrl: "views/Home.html", controller: "HomeCtrl" })
